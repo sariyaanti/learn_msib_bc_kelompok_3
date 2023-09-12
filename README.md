@@ -1,1 +1,1 @@
-# learn_msib_bc_kelompok_3
+Sari Yanti Pandiangan <br> sariyaanti27@gmail.com <br> Bandung
