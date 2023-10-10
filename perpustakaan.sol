@@ -45,6 +45,15 @@ contract SariYantiPandiangan {
 
         Buku memory buku = bukuPerISBN[isbn];
         return (buku.judul, buku.tahunDibuat, buku.penulis);
+
+    }
+
+    function getExecution(uint256 isbn) public view returns (string memory, uint256, string memory) {
+        require(bukuPerISBN[isbn].tahunDibuat != 0, "Buku dengan ISBN tersebut tidak ditemukan");
+
+        Buku memory buku = bukuPerISBN[isbn];
+        return (buku.judul, buku.tahunDibuat, buku.penulis);
+
     }
 
     function setAdmin(address adminAddress) public onlyAdmin {
